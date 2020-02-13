@@ -4,14 +4,15 @@
   "private": true,
   "description": "Учебный проект «Угадай мелодию» от HTML Academy",
   "scripts": {
-    "eslint": "eslint --ext .jsx --ext .js src/",
     "build": "webpack --mode production",
+    "eslint": "eslint --ext .jsx --ext .js src/",
     "start": "webpack-dev-server",
     "test": "npm run eslint && npm run test.jest",
     "test.jest": "jest"
   },
   "devDependencies": {
     "@babel/core": "7.8.4",
+    "@babel/preset-env": "7.8.4",
     "@babel/preset-react": "7.8.3",
     "babel-jest": "25.1.0",
     "babel-loader": "8.0.6",
