@@ -9,7 +9,7 @@ const welcomeButtonHandler = () => {};
 
 const App = (props) => {
 
-  const {errorsCount} = props;
+  const {errorsCount, questions} = props;
 
   return (
     <BrowserRouter>
@@ -21,10 +21,16 @@ const App = (props) => {
           />
         </Route>
         <Route exact path="/dev-artist">
-          <ArtistQuestionScreen />
+          <ArtistQuestionScreen
+            question={questions[1]}
+            onAnswer={() =>{}}
+          />
         </Route>
         <Route exact path="/dev-genre">
-          <GenreQuestionScreen />
+          <GenreQuestionScreen
+            question={questions[0]}
+            onAnswer={() => {}}
+          />
         </Route>
       </Switch>
     </BrowserRouter>

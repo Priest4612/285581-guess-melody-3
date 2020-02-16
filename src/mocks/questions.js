@@ -4,7 +4,7 @@ export default [
   {
     type: `genre`,
     genre: `rock`,
-    answer: [{
+    answers: [{
       src: `https://upload.wikimedia.org/wikipedia/commons/4/4e/BWV_543-fugue.ogg`,
       genre: `rock`,
     }, {
@@ -23,7 +23,7 @@ export default [
       artist: `Jim Beam`,
       src: `https://upload.wikimedia.org/wikipedia/commons/4/4e/BWV_543-fugue.ogg`,
     },
-    answer: [{
+    answers: [{
       picture: `${AVATAR_URL}/${Math.random()}`,
       artist: `John Snow`,
     }, {
