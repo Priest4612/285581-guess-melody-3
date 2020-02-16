@@ -1,12 +1,11 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
+import {GameType} from '../../const.js';
 
 
 class ArtistQuestionScreen extends PureComponent {
   constructor(props) {
     super(props);
-
-    this.props = props;
   }
 
   render() {
@@ -79,7 +78,7 @@ ArtistQuestionScreen.propTypes = {
       artist: PropTypes.string.isRequired,
       src: PropTypes.string.isRequired,
     }).isRequired,
-    // type: PropTypes.oneOf([GameType.ARTIST, GameType.GENRE]).isRequired,
+    type: PropTypes.oneOf([GameType.ARTIST, GameType.GENRE]).isRequired,
   }).isRequired,
 };
 
