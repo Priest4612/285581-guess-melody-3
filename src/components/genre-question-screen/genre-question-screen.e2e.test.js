@@ -40,6 +40,7 @@ describe(`Check GenreQuestionScreen`, () => {
     const genreQuestion = shallow(<GenreQuestionScreen
       onAnswer={onAnswer}
       question={question}
+      renderPlayer={() => {}}
     />);
 
     const form = genreQuestion.find(`form`);
@@ -60,6 +61,7 @@ describe(`Check GenreQuestionScreen`, () => {
     const genreQuestion = shallow(<GenreQuestionScreen
       onAnswer={onAnswer}
       question={question}
+      renderPlayer={() => {}}
     />);
 
     const form = genreQuestion.find(`form`);
