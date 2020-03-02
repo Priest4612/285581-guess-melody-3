@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'reACT-TEST-RENDERER';
+import renderer from 'react-test-renderer';
 
 import GameScreen from '../game-screen/game-screen.jsx';
 import {GameType} from '../../const.js';
